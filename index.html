@@ -98,6 +98,21 @@
             animation: glow-red 2s ease-in-out infinite;
         }
 
+        /* Keyframes for the divider pulse effect */
+        @keyframes divider-pulse {
+            0%, 100% { border-color: #1a1a1a; }
+            50% { border-color: #FF4500; } /* Red glow in the middle */
+        }
+
+        .animated-divider {
+            /* Thick, double border effect using box-shadow for a clean, deep look */
+            height: 4px;
+            background-color: #1a1a1a;
+            border: 2px solid #FFD700;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            animation: divider-pulse 5s ease-in-out infinite;
+        }
+
     </style>
 </head>
 <body class="text-brand-text font-sans min-h-screen">
@@ -183,10 +198,17 @@
             </div>
         </div>
         
+        <!-- Divider after Hero Section -->
+        <div class="mt-16 mb-16 max-w-5xl mx-auto animated-divider"></div>
+
+
         <!-- About Section -->
         <section id="about" class="mt-20">
-            <!-- Section title color is Black (default body text) -->
-            <h2 class="text-4xl font-extrabold mb-6 text-center">About</h2>
+            <!-- New: Logo next to the title -->
+            <div class="flex items-center justify-center mb-6">
+                <img src="bonkylogo1.png" alt="$BONKY Section Logo" class="w-8 h-8 mr-3">
+                <h2 class="text-4xl font-extrabold text-center">About</h2>
+            </div>
             <!-- Box background changed to Black, with White text and Yellow border for higher contrast -->
             <div class="bg-brand-primary p-8 rounded-xl border-4 border-accent-yellow max-w-4xl mx-auto shadow-2xl">
                 <p class="text-lg text-brand-secondary leading-relaxed text-center">
@@ -194,10 +216,18 @@
                 </p>
             </div>
         </section>
+        
+        <!-- Divider after About Section -->
+        <div class="mt-16 mb-16 max-w-5xl mx-auto animated-divider"></div>
+
 
         <!-- How To Buy Section -->
         <section id="buy" class="mt-20">
-            <h2 class="text-4xl font-extrabold mb-6 text-center">How To Buy</h2>
+            <!-- New: Logo next to the title -->
+            <div class="flex items-center justify-center mb-6">
+                <img src="bonkylogo1.png" alt="$BONKY Section Logo" class="w-8 h-8 mr-3">
+                <h2 class="text-4xl font-extrabold text-center">How To Buy</h2>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- Step Boxes: White background, Black text, chunky Black shadow, Yellow number -->
                 <div class="bg-brand-secondary p-6 rounded-xl border-4 border-brand-primary text-brand-primary shadow-meme">
@@ -223,9 +253,16 @@
             </div>
         </section>
 
+        <!-- Divider after How To Buy Section -->
+        <div class="mt-16 mb-16 max-w-5xl mx-auto animated-divider"></div>
+
         <!-- Memes Section -->
         <section id="memes" class="mt-20">
-            <h2 class="text-4xl font-extrabold mb-6 text-center">Memes</h2>
+            <!-- New: Logo next to the title -->
+            <div class="flex items-center justify-center mb-6">
+                <img src="bonkylogo1.png" alt="$BONKY Section Logo" class="w-8 h-8 mr-3">
+                <h2 class="text-4xl font-extrabold text-center">Memes</h2>
+            </div>
             <!-- Box background changed to Black, with White text and Yellow border -->
             <div class="bg-brand-primary p-8 rounded-xl border-4 border-accent-yellow max-w-4xl mx-auto shadow-2xl">
                 <p class="text-lg text-brand-secondary leading-relaxed text-center">
@@ -240,6 +277,11 @@
 
     <!-- Footer background changed to Black, White text -->
     <footer class="text-center p-6 mt-12 bg-brand-primary border-t-4 border-accent-yellow">
+        <!-- New: Logo and ticker in the footer -->
+        <div class="flex items-center justify-center mb-2">
+            <img src="bonkylogo1.png" alt="$BONKY Footer Logo" class="w-6 h-6 mr-2">
+            <span class="text-brand-secondary font-bold text-lg">$BONKY</span>
+        </div>
         <p class="text-sm text-gray-400">&copy; 2024 $BONKY. All rights reserved. Meme power on BNB!</p>
     </footer>
 
