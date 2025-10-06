@@ -123,7 +123,8 @@
             
             <!-- Left side: Logo and Ticker -->
             <div class="flex items-center space-x-3 logo-pulse">
-                <img src="bonkylogo1.png" alt="$BONKY Logo" class="w-10 h-10 object-contain">
+                <!-- LOGO MÉRET NÖVELVE: w-10 h-10 -> w-12 h-12 -->
+                <img src="bonkylogo1.png" alt="$BONKY Logo" class="w-12 h-12 object-contain">
                 <span class="text-3xl font-extrabold tracking-widest text-brand-secondary">$BONKY</span>
             </div>
 
@@ -190,7 +191,7 @@
 
             <!-- 2D Logo Image (Right Side) - order-2 -->
             <div class="md:w-1/2 order-2 flex justify-center md:justify-end w-full mb-10 md:mb-0">
-                <!-- The logo is now a simple <img> with CSS coin-spin animation for 2D rotation -->
+                <!-- Ezt a logót nem érinti a méretváltozás -->
                 <img src="bonkylogo1.png" 
                      alt="$BONKY Spinning Coin Logo" 
                      class="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] object-contain coin-spin"
@@ -204,9 +205,9 @@
 
         <!-- About Section -->
         <section id="about" class="mt-20">
-            <!-- New: Logo next to the title -->
+            <!-- Logo méret növelve: w-8 h-8 -> w-10 h-10 -->
             <div class="flex items-center justify-center mb-6">
-                <img src="bonkylogo1.png" alt="$BONKY Section Logo" class="w-8 h-8 mr-3">
+                <img src="bonkylogo1.png" alt="$BONKY Section Logo" class="w-10 h-10 mr-3">
                 <h2 class="text-4xl font-extrabold text-center">About</h2>
             </div>
             <!-- Box background changed to Black, with White text and Yellow border for higher contrast -->
@@ -223,9 +224,9 @@
 
         <!-- How To Buy Section -->
         <section id="buy" class="mt-20">
-            <!-- New: Logo next to the title -->
+            <!-- Logo méret növelve: w-8 h-8 -> w-10 h-10 -->
             <div class="flex items-center justify-center mb-6">
-                <img src="bonkylogo1.png" alt="$BONKY Section Logo" class="w-8 h-8 mr-3">
+                <img src="bonkylogo1.png" alt="$BONKY Section Logo" class="w-10 h-10 mr-3">
                 <h2 class="text-4xl font-extrabold text-center">How To Buy</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -258,18 +259,31 @@
 
         <!-- Memes Section -->
         <section id="memes" class="mt-20">
-            <!-- New: Logo next to the title -->
+            <!-- Logo méret növelve: w-8 h-8 -> w-10 h-10 -->
             <div class="flex items-center justify-center mb-6">
-                <img src="bonkylogo1.png" alt="$BONKY Section Logo" class="w-8 h-8 mr-3">
+                <img src="bonkylogo1.png" alt="$BONKY Section Logo" class="w-10 h-10 mr-3">
                 <h2 class="text-4xl font-extrabold text-center">Memes</h2>
             </div>
             <!-- Box background changed to Black, with White text and Yellow border -->
             <div class="bg-brand-primary p-8 rounded-xl border-4 border-accent-yellow max-w-4xl mx-auto shadow-2xl">
-                <p class="text-lg text-brand-secondary leading-relaxed text-center">
-                    This section will contain the latest viral memes from the community! Placeholder image below.
+                <p class="text-lg text-brand-secondary leading-relaxed text-center mb-8">
+                    This section will feature the latest viral memes from the community! Below are 6 placeholders ready for the best $BONKY content.
                 </p>
-                <!-- Meme Placeholder: Yellow background, Black text -->
-                <img src="https://placehold.co/400x300/FFD700/1a1a1a?text=CRISP+BONK+MEME" alt="Meme Placeholder" class="mt-6 mx-auto rounded-lg shadow-2xl">
+                <!-- Meme Grid: Responsive 2-column (mobile) / 3-column (desktop) layout -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <!-- Meme 1 -->
+                    <img src="https://placehold.co/400x300/FFD700/1a1a1a?text=MEME+1" alt="Meme Placeholder 1" class="w-full h-auto rounded-lg shadow-lg">
+                    <!-- Meme 2 -->
+                    <img src="https://placehold.co/400x300/FFD700/1a1a1a?text=MEME+2" alt="Meme Placeholder 2" class="w-full h-auto rounded-lg shadow-lg">
+                    <!-- Meme 3 -->
+                    <img src="https://placehold.co/400x300/FFD700/1a1a1a?text=MEME+3" alt="Meme Placeholder 3" class="w-full h-auto rounded-lg shadow-lg">
+                    <!-- Meme 4 -->
+                    <img src="https://placehold.co/400x300/FFD700/1a1a1a?text=MEME+4" alt="Meme Placeholder 4" class="w-full h-auto rounded-lg shadow-lg">
+                    <!-- Meme 5 -->
+                    <img src="https://placehold.co/400x300/FFD700/1a1a1a?text=MEME+5" alt="Meme Placeholder 5" class="w-full h-auto rounded-lg shadow-lg">
+                    <!-- Meme 6 -->
+                    <img src="https://placehold.co/400x300/FFD700/1a1a1a?text=MEME+6" alt="Meme Placeholder 6" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
             </div>
         </section>
 
@@ -277,9 +291,9 @@
 
     <!-- Footer background changed to Black, White text -->
     <footer class="text-center p-6 mt-12 bg-brand-primary border-t-4 border-accent-yellow">
-        <!-- New: Logo and ticker in the footer -->
+        <!-- Logo méret növelve: w-6 h-6 -> w-8 h-8 -->
         <div class="flex items-center justify-center mb-2">
-            <img src="bonkylogo1.png" alt="$BONKY Footer Logo" class="w-6 h-6 mr-2">
+            <img src="bonkylogo1.png" alt="$BONKY Footer Logo" class="w-8 h-8 mr-2">
             <span class="text-brand-secondary font-bold text-lg">$BONKY</span>
         </div>
         <p class="text-sm text-gray-400">&copy; 2024 $BONKY. All rights reserved. Meme power on BNB!</p>
