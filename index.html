@@ -95,8 +95,8 @@
             
             <!-- Left side: Logo and Ticker -->
             <div class="flex items-center space-x-3 logo-pulse">
-                <!-- Logo: $BONKY Icon (Using local file) -->
-                <img src="bonkylogo.png" alt="$BONKY Logo" class="w-10 h-10 object-contain rounded-full bg-brand-white p-1">
+                <!-- Logo: $BONKY Icon (White background/padding removed) -->
+                <img src="bonkylogo.png" alt="$BONKY Logo" class="w-10 h-10 object-contain">
                 <span class="text-3xl font-extrabold tracking-widest text-brand-white">$BONKY</span>
             </div>
 
@@ -138,9 +138,10 @@
     <!-- Main Content (Hero Section) -->
     <main class="max-w-7xl mx-auto px-4 py-16 text-center">
         
-        <!-- Large Logo: $BONKY Icon (with pulse animation) -->
+        <!-- Large Logo: $BONKY Icon (Bigger and no background) -->
         <div class="logo-pulse">
-            <img src="bonkylogo.png" alt="$BONKY Logo" class="w-36 h-36 sm:w-48 sm:h-48 object-contain rounded-full mx-auto mb-8 bg-brand-white p-2">
+            <!-- Increased size to w-48/h-48 (sm:w-64/h-64) and removed white background classes -->
+            <img src="bonkylogo.png" alt="$BONKY Logo" class="w-48 h-48 sm:w-64 sm:h-64 object-contain mx-auto mb-8">
         </div>
 
         <!-- Main Text Box / Title (with subtle float animation) -->
